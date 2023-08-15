@@ -1,57 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>index</title>
+	</head>
+	<body>
+		<div class="wrap d-flex">
+			<%- include('./layout/sidebar', {page: "admin"}); -%>
+			<main class="w-75 mx-0 p-7">
+				<header
+					class="d-flex justify-content-between align-items-center mb-9"
+				>
+					<div class="d-flex text-dark fw-bold">
+						<h1 class="fs-4 me-9">Admin</h1>
+						<a class="d-flex align-items-center" href="#">
+							<span class="material-icons text-success"> add </span>
+							Add New Admin
+						</a>
+					</div>
+					<div class="d-flex text-dark fw-bold">
+						<a href="#" class="me-6">
+							<span class="material-icons align-middle">search</span>
+						</a>
+						<a href="#">
+							<span class="material-icons align-middle"
+								>notifications_active</span
+							>
+						</a>
+					</div>
+				</header>
+				<table class="table table-hover mb-10">
+					<thead>
+						<tr class="align-middle">
+							<th scope="col" class="p-0 fw-bold mb-1">
+								ID
+								<span class="material-icons align-middle text-success">
+									arrow_downward
+								</span>
+							</th>
+							<th scope="col" class="p-0 fw-bold mb-1">Name</th>
+							<th scope="col" class="p-0 fw-bold mb-1">Email</th>
+							<th scope="col" class="p-0 fw-bold mb-1">Verified</th>
+							<th scope="col" class="p-0 fw-bold mb-1"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="align-middle">
+							<th scope="row">#1</th>
+							<td>Emir Wicks</td>
+							<td>emir.wicks@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#2</th>
+							<td>Zaina Goldsmith</td>
+							<td>zaina.goldsmith@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#3</th>
+							<td>Mahima Lopez</td>
+							<td>mahima.lopez@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#4</th>
+							<td>Pharrell Murray</td>
+							<td>pharrell.murray@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#5</th>
+							<td>Annika Mcbride</td>
+							<td>annika.mcbride@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#6</th>
+							<td>Fatimah Clark</td>
+							<td>fatimah.clark@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#7</th>
+							<td>Klaudia Rhodes</td>
+							<td>klaudia.rhodes@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#8</th>
+							<td>Tillie Lucero</td>
+							<td>tillie.lucero@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#9</th>
+							<td>Sabrina Stephenson</td>
+							<td>sabrina.stephenson@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="align-middle">
+							<th scope="row">#10</th>
+							<td>Annie Smith</td>
+							<td>annie.smith@mail.com</td>
+							<td>Yes</td>
+							<td class="text-end">
+								<a href="#" class="me-6">
+									<span class="material-icons align-middle"> visibility </span>
+								</a>
+								<a href="#">
+									<span class="material-icons align-middle"> edit </span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<nav
+					aria-label="Page navigation"
+				>
+					<ul class="pagination d-flex justify-content-end">
+						<li class="page-item text-success">
+							<a class="page-link disabled" href="#"
+              aria-label="Previous"><span class="material-icons align-middle"
+									>navigate_before
+								</span></a
+							>
+						</li>
+						<li class="page-item active"><a class="page-link px-4 py-1" href="#">1</a></li>
+						<li class="page-item"><a class="page-link px-4 py-1" href="#">2</a></li>
+						<li class="page-item"><a class="page-link px-4 py-1" href="#">3</a></li>
+						<li class="page-item text-success">
+							<a class="page-link py-1" href="#"
+              aria-label="Next"><span class="material-icons align-middle">
+									navigate_next
+								</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+			</main>
+		</div>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <%- include('./layout/footer'); -%>
-
-    <script type="module" src="../main.js"></script>
-  </body>
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

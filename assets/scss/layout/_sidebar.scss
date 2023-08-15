@@ -1,0 +1,23 @@
+.sidebar{
+  width: clamp(236px,30vw,296px);
+
+  &-nav li{
+    &.active{
+      border-left: 4px solid $green;
+      color:$green;
+    }
+    &:not(.active):hover{
+      background: $gray-300;
+    }
+  }
+
+  &-footer{
+    img{
+      height: 40px;
+      aspect-ratio: 1;
+    }
+    :last-child{
+      line-height: 24px;
+    }
+  }
+}

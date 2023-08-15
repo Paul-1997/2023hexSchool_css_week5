@@ -1,0 +1,9 @@
+.table{
+    :not(thead) > tr > :is(th,td){
+        padding-block:17px 14px;
+        padding-inline: 0;
+    }
+    thead span.material-icons{
+        font-size: 18px;
+    }
+}
