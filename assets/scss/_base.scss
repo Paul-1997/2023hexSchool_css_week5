@@ -1,0 +1,25 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+//icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Roboto','Noto Sans TC','PingFang SC',sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+

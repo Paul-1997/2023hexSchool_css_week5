@@ -1,0 +1,63 @@
+@mixin hover-lift {
+	scale: 1.1;
+	filter: drop-shadow(0 0.5em 1em rgba(0, 0, 0, 0.5));
+	@content;
+}
+@mixin hover-underline {
+	text-decoration: underline;
+	text-underline-offset: 0.25em;
+	text-decoration-thickness: 0.1em;
+	@content;
+}
+@mixin hover-wavy {
+	text-decoration: underline wavy;
+	text-underline-offset: 0.25em;
+	text-decoration-thickness: 0.25em;
+	@content;
+}
+@mixin hover-clr-gold {
+	color: $gold;
+	@content;
+}
+@mixin hover-clr-red {
+	color: $red;
+	@content;
+}
+@mixin hover-green-outlined {
+	transition: outline-offset 500ms;
+	outline: 10px solid $lightgreen;
+	outline-offset: -10px;
+	@content;
+}
+@mixin hover-floatUp {
+	z-index: 10;
+	@include pseudo('MORE',absolute){
+		text-transform: uppercase;
+		inset: 0;
+		color: inherit;
+		opacity: 0;
+		z-index: 100;
+		transition: opacity 1s;
+	}
+	&::before {
+		transform: translateY(-40%);
+		filter: grayscale(50%);
+		transition-duration: 1s;
+	}
+	&::after {
+		transform: translateY(-70%);
+		filter: grayscale(70%);
+		transition-duration: 500ms;
+	}
+	@include hover{
+		&::before {
+			opacity: 0.7;
+			transition-duration: 500ms;
+		}
+		&::after {
+			opacity: 0.6;
+			transition-duration: 1s;
+		}
+	}
+	@content;
+}
