@@ -5,13 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-138ea8f4.js"></script>
-    <link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-2894f3e5.css">
+    <script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-985ef50d.js"></script>
+    <link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-2f2c6a43.css">
   </head>
   <body>
-
+    <nav class="sidebar bg-light">
+    <div class="d-flex flex-column min-vh-100 h-100">
+        <h2 class="sidebar-title p-7">
+            <a href="#"><img src="/2023hexSchool_css_week5/assets/logo-ANSWER-5336fb45.svg" alt="Answer-logo" /></a>
+        </h2>
+        <ul class="sidebar-nav list-unstyled  flex-grow-1 w-100">
+            <li class="mb-6">
+                <a href="#" class="nav-item d-flex align-items-center px-7">
+                    <span class="material-icons me-4">
+                        insert_chart
+                        </span>
+                    <h3 class="fs-6 fw-bold">Dashboard</h3>
+                </a>
+            </li>
+            <li class="mb-6">
+                <a href="#" class="nav-item d-flex align-items-center px-7">
+                    <span class="material-icons me-4">
+                        forum
+                        </span>
+                    <h3 class="fs-6 fw-bold">Question</h3>
+                </a>
+            </li>
+            <li class="mb-6 active">
+                <a href="../pages/assignment.html" class="nav-item d-flex align-items-center px-7 ">
+                    <span class="material-icons me-4">
+                        assignment
+                        </span>
+                    <h3 class="fs-6 fw-bold">Assignment</h3>
+                </a>
+            </li>
+            <li class="mb-6">
+                <a href="#" class="nav-item d-flex align-items-center px-7">
+                    <span class="material-icons me-4">
+                        video_library
+                        </span>
+                    <h3 class="fs-6 fw-bold">Course</h3>
+                </a>
+            </li>
+            <li class="mb-6 ">
+                <a href="../pages/admin.html" class="nav-item d-flex align-items-center px-7 ">
+                    <span class="material-icons me-4">
+                        group
+                        </span>
+                    <h3 class="fs-6 fw-bold">Admin</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item d-flex align-items-center px-7">
+                    <span class="material-icons me-4">
+                        settings
+                        </span>
+                    <h3 class="fs-6 fw-bold">Settings</h3>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer d-flex align-items-center mt-auto ps-7 mb-7 ">
+            <img src="/2023hexSchool_css_week5/assets/andychen-f14fef59.jpeg" alt="user-photo" class="rounded-circle me-4">
+            <h3 class="fs-6">
+                <div class="mb-1">Andy Chen</div>
+                <div class="text-secondary fs-sm">andy0401@mail.com</div>
+            </h3>
+        </div> 
+    </div>
+            
+</nav>
     <h1>我是contact</h1>
 
+
+    <h1 class="index-title">我是首頁</h1>
+
+    <div class="card" style="width: 18rem">
+      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
+      <div class="card-body">
+        <h5 class="card-title">卡片元件</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
+          nobis earum!
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 按鈕 -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      打開 modal
+    </button>
+
+    <!-- Modal 元件 -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">內容</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
   </body>
