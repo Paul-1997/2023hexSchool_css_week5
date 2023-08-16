@@ -15,8 +15,8 @@
 				>
 					<div class="d-flex text-dark fw-bold">
 						<h1 class="fs-4 me-9">Admin</h1>
-						<a class="d-flex align-items-center" href="#">
-							<span class="material-icons text-success"> add </span>
+						<a class="d-flex align-items-center text-hover-success" href="#" data-bs-toggle="modal" data-bs-target="#addAdminModal" role="button">
+							<span class="material-icons text-success" > add </span>
 							Add New Admin
 						</a>
 					</div>
@@ -53,10 +53,10 @@
 							<td>emir.wicks@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success" data-bs-toggle="modal" data-bs-target="#adminInfoModal" role="button">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success" data-bs-toggle="modal" data-bs-target="#editAdminModal" role="button">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -67,10 +67,10 @@
 							<td>zaina.goldsmith@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -81,10 +81,10 @@
 							<td>mahima.lopez@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -95,10 +95,10 @@
 							<td>pharrell.murray@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -109,10 +109,10 @@
 							<td>annika.mcbride@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -123,10 +123,10 @@
 							<td>fatimah.clark@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -137,10 +137,10 @@
 							<td>klaudia.rhodes@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -151,10 +151,10 @@
 							<td>tillie.lucero@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -165,10 +165,10 @@
 							<td>sabrina.stephenson@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -179,10 +179,10 @@
 							<td>annie.smith@mail.com</td>
 							<td>Yes</td>
 							<td class="text-end">
-								<a href="#" class="me-6">
+								<a href="#" class="me-6 text-hover-success">
 									<span class="material-icons align-middle"> visibility </span>
 								</a>
-								<a href="#">
+								<a href="#" class="text-hover-success">
 									<span class="material-icons align-middle"> edit </span>
 								</a>
 							</td>
@@ -193,18 +193,18 @@
 					aria-label="Page navigation"
 				>
 					<ul class="pagination d-flex justify-content-end">
-						<li class="page-item text-success">
-							<a class="page-link disabled" href="#"
+						<li class="page-item">
+							<a class="page-link border border-end-0 rounded-start-mini border-success text-success disabled" href="#"
               aria-label="Previous"><span class="material-icons align-middle"
 									>navigate_before
 								</span></a
 							>
 						</li>
-						<li class="page-item active"><a class="page-link px-4 py-1" href="#">1</a></li>
-						<li class="page-item"><a class="page-link px-4 py-1" href="#">2</a></li>
-						<li class="page-item"><a class="page-link px-4 py-1" href="#">3</a></li>
-						<li class="page-item text-success">
-							<a class="page-link py-1" href="#"
+						<li class="page-item active"><a class="page-link border border-success" href="#">1</a></li>
+						<li class="page-item"><a class="page-link border border-success" href="#">2</a></li>
+						<li class="page-item"><a class="page-link border border-success" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link border rounded-end-mini border-success text-success" href="#"
               aria-label="Next"><span class="material-icons align-middle">
 									navigate_next
 								</span></a
@@ -215,6 +215,10 @@
 			</main>
 		</div>
 
+
+		<%- include('./layout/addAdminModal', {page: "admin"}); -%>
+		<%- include('./layout/adminInfoModal', {page: "admin"}); -%>
+		<%- include('./layout/editAdminModal', {page: "admin"}); -%>
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>

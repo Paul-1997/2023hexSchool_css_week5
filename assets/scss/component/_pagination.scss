@@ -1,0 +1,9 @@
+.pagination{
+    a{
+        padding: 4px 11px;
+    }
+    :first-child a,
+    :last-child a{
+        padding: 3px;
+    }
+}
