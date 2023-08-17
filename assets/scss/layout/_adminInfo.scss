@@ -1,0 +1,16 @@
+.admin-photo img{
+    width: 141px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.expand-panel{
+    &:hover{
+        background: $gray-200;
+    }
+    span:last-child{//expand-more
+        transition: transform 500ms;
+    }
+    &[aria-expanded="true"] span:last-child{
+        transform: rotate(180deg);
+    }
+}

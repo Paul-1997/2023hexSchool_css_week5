@@ -4,12 +4,13 @@
 .modal-lh-33{
     line-height: 33px;
 }
-
-.admin-selfie img{
-    width: 141px;
-    aspect-ratio: 1;
-}
-
 .modal-footer button{
+    margin-inline-end: 0;
     padding : 8px 33px;
+    
+    & + button {
+        margin-left: 15px;
+    }
 }
+
+

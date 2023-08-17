@@ -309,7 +309,7 @@ $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
-//changed:
+
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -319,7 +319,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "light-neutral" :  $gray-400
+  "light-neutral" :  $gray-400//changed:
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -501,8 +501,8 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-//changed:
-$border-radius-mini: 2px;
+
+$border-radius-mini: 2px; //changed:
 $border-radius:               .375rem !default;
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
@@ -586,10 +586,10 @@ $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
-//changed:
+
 $font-sizes: (
   mini: $font-size-base * .75, //12
-  sm: $font-size-sm, //14
+  sm: $font-size-sm, //14 //changed:
   1: $h1-font-size, //40
   2: $h2-font-size, //32
   3: $h3-font-size, //28
@@ -600,11 +600,14 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-//changed:
+
+// $headings-margin-bottom:      $spacer * .5 !default;
 $headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
+// $headings-font-weight:        500 !default;
 $headings-font-weight:        700 !default;
+// $headings-line-height:        1.2 !default;
 $headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
@@ -1223,8 +1226,11 @@ $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
-$pagination-active-color:           $white !default; //!important 太難改
-$pagination-active-bg:              $success !default; //!important 太難改
+
+// $pagination-active-color:           $component-active-color !default;
+// $pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           $white !default; 
+$pagination-active-bg:              $success !default;  //changed:
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;

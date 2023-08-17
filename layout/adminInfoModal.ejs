@@ -5,17 +5,17 @@
 	aria-labelledby="adminInfoModalLabel"
 	aria-hidden="true"
 >
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content p-7 rounded-mini border-light-neutral flex-row">
-			<div class="admin-selfie me-6">
+			<div class="admin-photo me-6">
 				<img
 				class="rounded-mini"
 				src="../assets/images/emir.jpeg"
 				alt="Emir"				
 			/>
 			</div>
-			<div class="d-flex flex-column">
-				<div class="modal-header border-bottom-0 p-0 mb-3">
+			<div class="d-flex flex-column flex-grow-1">
+				<div class="modal-header border-bottom-0 p-0 mb-1">
 					<div class="admin-No">#1</div>
 					<button
 						type="button"
@@ -24,24 +24,27 @@
 						aria-label="Close"
 					></button>
 				</div>
-				<div class="modal-body p-0 text-dark mb-5">
+				<div class="modal-body p-0 text-dark">
 					<p>Admin</p>
-					<h2 class="fs-4 mb-3" id="adminInfoModalLabel">Emir Wicks</h2>
-					<p class="text-secondary fs-sm modal-lh-24">emir.wicks@mail.com</p>
-					<a class="w-100" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
-						Link with href
+					<h2 class="fs-4 mb-3 modal-lh-24" id="adminInfoModalLabel">Emir Wicks</h2> <!--FIXME: lh36好像太大-->
+					<p class="text-secondary fs-sm modal-lh-24 mb-4">emir.wicks@mail.com</p>
+					<a class="expand-panel  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
+						<span class="fs-sm text-dark">Verified</span>
+							<span class="material-icons text-success expand-more">
+								expand_more
+							</span>
 					</a>
 				</div>
-				<div class="modal-footer border-top-0 pt-0 collapse" id="adminCollapse">
+				<div class="modal-footer border-top-0 pt-7 px-0 collapse" id="adminCollapse"><!--bs-collapse-->
 					<button
 						type="button"
-						class="btn btn-outline-success rounded-mini"
+						class="btn btn-outline-danger rounded-mini fw-bold"
 						data-bs-dismiss="modal"
 					>
-						Cancel
+					Deactivate
 					</button>
-					<button type="button" class="btn btn-success rounded-mini">
-						Add
+					<button type="button" class="btn btn-success rounded-mini fw-bold">
+						Edit
 					</button>
 				</div>
 			</div>
