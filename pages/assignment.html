@@ -15,7 +15,7 @@
 						<h1 class="fs-4 me-9">Assignment</h1>
 						<div class="dropdown">
 							<a
-								class="d-flex align-items-center text-hover-success dropdown-toggle"
+								class="d-flex align-items-center text-hover-success dropdown-toggle dropdown-toggle-success"
 								href="#"
 								id="#CourseDropdown"
 								role="button"
@@ -47,7 +47,7 @@
 				>
 					<div class="dropdown">
 						<a
-							class="d-flex align-items-center text-hover-success dropdown-toggle"
+							class="d-flex align-items-center text-hover-success dropdown-toggle dropdown-toggle-success"
 							href="#"
 							id="#CourseFilterDropdown"
 							role="button"
@@ -68,7 +68,7 @@
 					<div class="list-group flex-grow-1 me-4 rounded-mini">
 						<a
 							href="#"
-							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral active"
+							class="list-group-item list-group-item-action text-dark fs-mini border border-light-neutral active"
 						>
 							<div
 								class="d-flex justify-content-between align-items-center mb-1"
@@ -83,7 +83,7 @@
 						</a>
 						<a
 							href="#"
-							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+							class="list-group-item list-group-item-action text-dark fs-mini border border-light-neutral"
 						>
 							<div
 								class="d-flex justify-content-between align-items-center mb-1"
@@ -98,7 +98,7 @@
 						</a>
 						<a
 							href="#"
-							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+							class="list-group-item list-group-item-action text-dark fs-mini border border-light-neutral"
 						>
 							<div
 								class="d-flex justify-content-between align-items-center mb-1"
@@ -113,7 +113,7 @@
 						</a>
 						<a
 							href="#"
-							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+							class="list-group-item list-group-item-action text-dark fs-mini border border-light-neutral"
 						>
 							<div
 								class="d-flex justify-content-between align-items-center mb-1"
@@ -139,8 +139,8 @@
 							</h2>
 							<span class="material-icons text-dark"> more_vert </span>
 						</div>
-						<div class="card-body ps-4 pe-7 py-4">
-							<div class="card-content d-flex mb-4">
+						<div class="card-body py-4 px-0">
+							<div class="card-content d-flex mb-4 ps-4 pe-7">
 								<img
 									src="../assets/images/emilywang.jpeg"
 									alt="student-photo"
@@ -173,7 +173,7 @@
 									>
 								</div>
 							</div>
-							<div class="card-content d-flex">
+							<div class="card-content d-flex ps-4 pe-7" data-shown="true">
 								<img
 									src="../assets/images/andychen.jpeg"
 									alt="teacher-photo"
@@ -189,10 +189,15 @@
 												>
 											</div>
 											<div>
-												<span class="material-icons text-end me-6">
-													star_outline
-												</span>
-												<span class="material-icons text-end"> edit </span>
+												<a href="#">
+													<span class="material-icons text-end me-6">
+														star_outline
+													</span>
+												</a><a href="#">
+													<span class="material-icons text-end"> edit </span>
+												</a>
+												
+												
 											</div>
 										</div>
 									</div>
@@ -228,18 +233,57 @@
 									</ul>
 								</div>
 							</div>
+							<div class="card-content rounded-mini" data-shown="false">
+								<div class="d-flex ps-6 py-4  border border-secondary bg-light">
+									<div class="dropdown">
+										<a
+											class="dropdown-toggle me-6 hover-op-5"
+											href="#"
+											role="button"
+											id="replyTypography"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Body Text
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="replyTypography">
+											<li><a class="dropdown-item" href="#">roboto</a></li>
+											<li><a class="dropdown-item" href="#">lato</a></li>
+											<li><a class="dropdown-item" href="#">monospace</a></li>
+										</ul>
+									</div>
+									<a href="#" class="hover-op-5"><span class="material-icons me-6"> format_bold </span></a>
+									<a href="#" class="hover-op-5"><span class="material-icons me-6"> format_italic </span></a>
+									<a href="#" class="hover-op-5"><span class="material-icons me-6"> format_list_bulleted </span></a>
+									<a href="#" class="hover-op-5"><span class="material-icons me-6"> insert_photo </span></a>
+									<a href="#" class="hover-op-5"><span class="material-icons me-6"> insert_link </span></a>
+									<a href="#" class="hover-op-5"><span class="material-icons"> code </span></a>
+								</div>
+								<textarea class="py-4 ps-6 w-100 border-0" placeholder="Reply an answer…" rows="10"></textarea>
+								<div class="d-flex justify-content-end me-6">
+									<a href="#" class="replyToggleBtn btn btn-outline-success me-4 rounded-mini">Cancel</a>
+									<a href="#" class="btn btn-success rounded-mini">Reply</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="d-flex justify-content-end align-items-center w-100">
+				<div
+					class="d-flex justify-content-end align-items-center w-100"
+					data-shown="true"
+				>
 					<div class="mx-auto">
-						<a href="#"><span class="material-icons"> navigate_before </span></a>
-						<a href="#"><span class="material-icons"> navigate_next </span></a>
+						<a href="#" class="text-hover-success"
+							><span class="material-icons"> navigate_before </span></a
+						>
+						<a href="#" class="text-hover-success"
+							><span class="material-icons"> navigate_next </span></a
+						>
 					</div>
 					<a href="#" class="btn btn-outline-success rounded-mini me-4"
 						>Mark as read</a
 					>
-					<a href="#" class="replyBtn btn btn-success rounded-mini">Reply</a>
+					<a href="#" class="replyToggleBtn btn btn-success rounded-mini" >Reply</a>
 				</div>
 			</main>
 		</div>

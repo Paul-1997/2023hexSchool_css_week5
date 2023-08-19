@@ -1,5 +1,21 @@
-.text-hover-success{
-	&:hover{
-		color:$success;
+@each $theme , $color in $theme-colors{
+	.text-hover-#{$theme}{
+		&:hover{
+			color:$color;
+		}
+	}
+	.bg-hover-#{$theme}{
+		&:hover{
+			background: $color;
+		}
+	}
+}
+
+@for $i from 1 through 10{
+	.hover-op-#{$i}{
+		&:hover{
+			transition:  opacity 500ms;
+			opacity: $i * .1;
+		}
 	}
 }

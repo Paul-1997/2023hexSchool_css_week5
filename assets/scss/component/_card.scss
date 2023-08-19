@@ -19,3 +19,19 @@
         text-indent: 16px;
     }
 }
+
+
+
+// 助教回復功能 data-shown切換
+[data-shown='true']{
+    transform: scale(1);
+}
+[data-shown='false']{
+    height: 0;
+    transform: scale(0);
+}
+
+[data-shown]:nth-child(2){ //反而是第一個有動畫??
+    transition: all 1s;
+    transform-origin: bottom right;
+}

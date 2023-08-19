@@ -22,3 +22,14 @@ svg{
 p{
     letter-spacing: 1px;
 }
+textarea{
+    resize: none;
+    height: auto;
+    &:placeholder{
+        color: $gray-400;
+    }
+    &:focus{
+        outline-offset: -.1em;
+        outline-color: rgba(0,0,0,.07);
+    }
+}
