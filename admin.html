@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>index</title>
-		<script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-985ef50d.js"></script>
-		<link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-2f2c6a43.css">
+		<title>Admin | Answer</title>
+		<script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-b0a51d58.js"></script>
+		<link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-7b7c63e4.css">
 	</head>
 	<body>
 		<div class="wrap d-flex">
@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li class="mb-6 ">
-                <a href="../pages/assignment.html" class="nav-item d-flex align-items-center px-7 ">
+                <a href="./assignment.html" class="nav-item d-flex align-items-center px-7 ">
                     <span class="material-icons me-4">
                         assignment
                         </span>
@@ -371,29 +371,29 @@
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Coupon" name="customAccess"  class="me-3"/><label
-								for="Coupon"
+							<input type="checkbox" id="addAdmin-Coupon" name="customAccess"  class="me-3"/><label
+								for="addAdmin-Coupon"
 								class="text-dark"
 								>Coupon</label
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Message" name="customAccess" class="me-3" /><label
-								for="Message"
+							<input type="checkbox" id="addAdmin-Message" name="customAccess" class="me-3" /><label
+								for="addAdmin-Message"
 								class="text-dark"
 								>Message</label
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Setting" name="customAccess" class="me-3" /><label
-								for="Setting"
+							<input type="checkbox" id="addAdmin-Setting" name="customAccess" class="me-3" /><label
+								for="addAdmin-Setting"
 								class="text-dark"
 								>Setting</label
 							>
 						</div>
 						<div class="d-flex align-center">
-							<input type="checkbox" id="Task Menu" name="customAccess" class="me-3"/><label
-								for="Task Menu"
+							<input type="checkbox" id="addAdmin-TaskMenu" name="customAccess" class="me-3"/><label
+								for="addAdmin-TaskMenu"
 								class="text-dark"
 								>Task Menu</label
 							>
@@ -405,7 +405,7 @@
 			<div class="modal-footer border-top-0 pt-0">
 				<button
 					type="button"
-					class="btn btn-outline-success rounded-mini"
+					class="btn btn-outline-success rounded-mini me-4"
 					data-bs-dismiss="modal"
 				>
 					Cancel
@@ -422,17 +422,17 @@
 	aria-labelledby="adminInfoModalLabel"
 	aria-hidden="true"
 >
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content p-7 rounded-mini border-light-neutral flex-row">
-			<div class="admin-selfie me-6">
+			<div class="admin-photo me-6">
 				<img
 				class="rounded-mini"
 				src="/2023hexSchool_css_week5/assets/emir-3d7a4b39.jpeg"
 				alt="Emir"				
 			/>
 			</div>
-			<div class="d-flex flex-column">
-				<div class="modal-header border-bottom-0 p-0 mb-3">
+			<div class="d-flex flex-column flex-grow-1">
+				<div class="modal-header border-bottom-0 p-0 mb-1">
 					<div class="admin-No">#1</div>
 					<button
 						type="button"
@@ -441,24 +441,27 @@
 						aria-label="Close"
 					></button>
 				</div>
-				<div class="modal-body p-0 text-dark mb-5">
+				<div class="modal-body p-0 text-dark">
 					<p>Admin</p>
-					<h2 class="fs-4 mb-3" id="adminInfoModalLabel">Emir Wicks</h2>
-					<p class="text-secondary fs-sm modal-lh-24">emir.wicks@mail.com</p>
-					<a class="w-100" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
-						Link with href
+					<h2 class="fs-4 mb-3 modal-lh-24" id="adminInfoModalLabel">Emir Wicks</h2> <!--FIXME: lh36好像太大-->
+					<p class="text-secondary fs-sm modal-lh-24 mb-4">emir.wicks@mail.com</p>
+					<a class="expand-panel  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
+						<span class="fs-sm text-dark">Verified</span>
+							<span class="material-icons text-success expand-more">
+								expand_more
+							</span>
 					</a>
 				</div>
-				<div class="modal-footer border-top-0 pt-0 collapse" id="adminCollapse">
+				<div class="modal-footer border-top-0 pt-7 px-0 collapse" id="adminCollapse"><!--bs-collapse-->
 					<button
 						type="button"
-						class="btn btn-outline-success rounded-mini"
+						class="btn btn-outline-danger rounded-mini fw-bold me-4"
 						data-bs-dismiss="modal"
 					>
-						Cancel
+					Deactivate
 					</button>
-					<button type="button" class="btn btn-success rounded-mini">
-						Add
+					<button type="button" class="btn btn-success rounded-mini fw-bold">
+						Edit
 					</button>
 				</div>
 			</div>
@@ -552,36 +555,36 @@
 					<div class="form-group border-bottom border-light-neutral mb-6">
 						<h3 class="mb-4 fs-5 modal-lh-33">Custom Access</h3>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Lecture" name="customAccess" class="me-3" /><label
-								for="Lecture"
+							<input type="checkbox" id="editAdmin-Lecture" name="customAccess" class="me-3" /><label
+								for="editAdmin-Lecture"
 								class="text-dark"
 								>Lecture</label
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Coupon" name="customAccess"  class="me-3"/><label
-								for="Coupon"
+							<input type="checkbox" id="editAdmin-Coupon" name="customAccess"  class="me-3"/><label
+								for="editAdmin-Coupon"
 								class="text-dark"
 								>Coupon</label
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Message" name="customAccess" class="me-3" /><label
-								for="Message"
+							<input type="checkbox" id="editAdmin-Message" name="customAccess" class="me-3" /><label
+								for="editAdmin-Message"
 								class="text-dark"
 								>Message</label
 							>
 						</div>
 						<div class="d-flex align-center mb-4">
-							<input type="checkbox" id="Setting" name="customAccess" class="me-3" /><label
-								for="Setting"
+							<input type="checkbox" id="editAdmin-Setting" name="customAccess" class="me-3" /><label
+								for="editAdmin-Setting"
 								class="text-dark"
 								>Setting</label
 							>
 						</div>
 						<div class="d-flex align-center mb-6">
-							<input type="checkbox" id="Task Menu" name="customAccess" class="me-3"/><label
-								for="Task Menu"
+							<input type="checkbox" id="editAdmin-TaskMenu" name="customAccess" class="me-3"/><label
+								for="editAdmin-TaskMenu"
 								class="text-dark"
 								>Task Menu</label
 							>
@@ -608,7 +611,7 @@
 			<div class="modal-footer border-top-0 pt-0">
 				<button
 					type="button"
-					class="btn btn-outline-success rounded-mini"
+					class="btn btn-outline-success rounded-mini me-4"
 					data-bs-dismiss="modal"
 				>
 					Cancel
