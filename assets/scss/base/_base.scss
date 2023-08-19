@@ -22,6 +22,8 @@ svg{
 p{
     letter-spacing: 1px;
 }
+
+
 textarea{
     resize: none;
     height: auto;
@@ -32,4 +34,8 @@ textarea{
         outline-offset: -.1em;
         outline-color: rgba(0,0,0,.07);
     }
+}
+
+label{
+    cursor: pointer;
 }
