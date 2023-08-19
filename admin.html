@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin | Answer</title>
-		<script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-b0a51d58.js"></script>
-		<link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-7b7c63e4.css">
+		<script type="module" crossorigin src="/2023hexSchool_css_week5/assets/main-cef98fe2.js"></script>
+		<link rel="stylesheet" href="/2023hexSchool_css_week5/assets/main-8846cab5.css">
 	</head>
 	<body>
 		<div class="wrap d-flex">
@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li class="mb-6 active">
-                <a href="../pages/admin.html" class="nav-item d-flex align-items-center px-7 ">
+                <a href="./admin.html" class="nav-item d-flex align-items-center px-7 ">
                     <span class="material-icons me-4">
                         group
                         </span>
@@ -88,10 +88,10 @@
 					</div>
 					<div class="d-flex text-dark fw-bold">
 						<a href="#" class="me-6">
-							<span class="material-icons align-middle">search</span>
+							<span class="material-icons align-middle text-hover-success">search</span>
 						</a>
 						<a href="#">
-							<span class="material-icons align-middle"
+							<span class="material-icons align-middle text-hover-success"
 								>notifications_active</span
 							>
 						</a>
@@ -258,9 +258,9 @@
 				<nav
 					aria-label="Page navigation"
 				>
-					<ul class="pagination d-flex justify-content-end">
+					<ul class="pagination d-flex justify-content-end rounded-mini">
 						<li class="page-item">
-							<a class="page-link border border-end-0 rounded-start-mini border-success text-success disabled" href="#"
+							<a class="page-link border border-end-0 border-success text-success disabled" href="#"
               aria-label="Previous"><span class="material-icons align-middle"
 									>navigate_before
 								</span></a
@@ -270,7 +270,7 @@
 						<li class="page-item"><a class="page-link border border-success" href="#">2</a></li>
 						<li class="page-item"><a class="page-link border border-success" href="#">3</a></li>
 						<li class="page-item">
-							<a class="page-link border rounded-end-mini border-success text-success" href="#"
+							<a class="page-link border border-success text-success" href="#"
               aria-label="Next"><span class="material-icons align-middle">
 									navigate_next
 								</span></a
@@ -445,7 +445,7 @@
 					<p>Admin</p>
 					<h2 class="fs-4 mb-3 modal-lh-24" id="adminInfoModalLabel">Emir Wicks</h2> <!--FIXME: lh36好像太大-->
 					<p class="text-secondary fs-sm modal-lh-24 mb-4">emir.wicks@mail.com</p>
-					<a class="expand-panel  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
+					<a class="expand-panel  d-flex justify-content-between align-items-center ps-3 bg-hover-light-neutral" data-bs-toggle="collapse" href="#adminCollapse" role="button" aria-expanded="false" aria-controls="adminCollapse">
 						<span class="fs-sm text-dark">Verified</span>
 							<span class="material-icons text-success expand-more">
 								expand_more
@@ -500,7 +500,7 @@
 								>Name</label
 							>
 							<input
-                                disabled
+                                readonly
 								type="text"
 								class="form-control text-dark border-0 bg-light rounded-mini modal-lh-24 px-4"
 								id="name"
@@ -514,7 +514,8 @@
 								>Email</label
 							>
 							<input
-                                disabled
+                                readonly
+								type="email"
 								class="form-control text-dark border-0 bg-light rounded-mini modal-lh-24 px-4"
 								id="editAdmin-email"
                                 value="emir.wicks@mail.com"
