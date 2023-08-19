@@ -1,9 +1,4 @@
-//font
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
 
-//icons
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-// @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
 body{
     line-height: 1.5;
@@ -22,4 +17,8 @@ svg{
 :is(h1,h2,h3,h4,h5,h6,p,ul,ol,dl){    
     padding: 0;
     margin: 0;
+}
+
+p{
+    letter-spacing: 1px;
 }

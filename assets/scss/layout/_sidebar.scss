@@ -1,6 +1,5 @@
 .sidebar{
-  width: clamp(236px,30vw,296px);
-
+  min-width: clamp(236px,25vw,296px);
   &-nav li{
     &.active{
       border-left: 4px solid $green;

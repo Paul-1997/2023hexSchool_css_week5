@@ -6,13 +6,17 @@
 @import './utils/_utilities.scss';
 @import "../../node_modules/bootstrap";
 
-@import './_base.scss';
+@import './base/_base.scss';
+@import './base/_typography.scss';
 
 @import './utils/_hover.scss';
 
 @import './component/_table.scss';
 @import './component/_pagination.scss';
 @import './component/_modal.scss';
+@import './component/_dropdown.scss';
+@import './component/_card.scss';
+@import './component/_button.scss';
 
 
 

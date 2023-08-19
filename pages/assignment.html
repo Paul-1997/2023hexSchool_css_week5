@@ -1,57 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-  </head>
-  <body>
-    <%- include('./layout/sidebar', {page: "assignment"}); -%>
-    <h1>我是contact</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Assignment | Answer</title>
+	</head>
+	<body>
+		<div class="wrap d-flex">
+			<%- include('./layout/sidebar', {page: "assignment"}); -%>
+			<main class="mx-0 p-7">
+				<header class="d-flex justify-content-between align-items-center mb-8">
+					<div class="d-flex text-dark fw-bold align-items-center">
+						<h1 class="fs-4 me-9">Assignment</h1>
+						<div class="dropdown">
+							<a
+								class="d-flex align-items-center text-hover-success dropdown-toggle"
+								href="#"
+								id="#CourseDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								All Courses
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="CourseDropdown">
+								<li><a class="dropdown-item" href="#">HTML</a></li>
+								<li><a class="dropdown-item" href="#">CSS</a></li>
+								<li><a class="dropdown-item" href="#">JS</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="d-flex text-dark fw-bold">
+						<a href="#" class="me-6">
+							<span class="material-icons align-middle">search</span>
+						</a>
+						<a href="#">
+							<span class="material-icons align-middle"
+								>notifications_active</span
+							>
+						</a>
+					</div>
+				</header>
+				<div
+					class="d-flex w-100 justify-content-between align-items-center mb-2"
+				>
+					<div class="dropdown">
+						<a
+							class="d-flex align-items-center text-hover-success dropdown-toggle"
+							href="#"
+							id="#CourseFilterDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							All Courses
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="CourseFilterDropdown">
+							<li><a class="dropdown-item" href="#">Chapter 1</a></li>
+							<li><a class="dropdown-item" href="#">Chapter 2</a></li>
+							<li><a class="dropdown-item" href="#">Chapter Final</a></li>
+						</ul>
+					</div>
+					<p class="fs-mini text-secondary">2 comments</p>
+				</div>
+				<div class="d-flex mb-4">
+					<div class="list-group flex-grow-1 me-4 rounded-mini">
+						<a
+							href="#"
+							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral active"
+						>
+							<div
+								class="d-flex justify-content-between align-items-center mb-1"
+							>
+								<p class="lh-lg">Chapter Assignment 2</p>
+								<p class="lh-lg">4 hrs ago</p>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<p class="fs-6 fw-bold">Please check this file…</p>
+								<p class="text-secondary lh-lg">Emily Wang</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+						>
+							<div
+								class="d-flex justify-content-between align-items-center mb-1"
+							>
+								<p class="lh-lg">Chapter Assignment 1</p>
+								<p class="lh-lg">12 hrs ago</p>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<p class="fs-6 fw-bold">My Homework</p>
+								<p class="text-secondary lh-lg">David Xu</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+						>
+							<div
+								class="d-flex justify-content-between align-items-center mb-1"
+							>
+								<p class="lh-lg">Final Assignment</p>
+								<p class="lh-lg">18 hrs ago</p>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<p class="fs-6 fw-bold">Have a problem with this…</p>
+								<p class="text-secondary lh-lg">Tony Wei</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="list-group-item list-group-item-action text-dark fs-mini border-light-neutral"
+						>
+							<div
+								class="d-flex justify-content-between align-items-center mb-1"
+							>
+								<p class="lh-lg">Final Assignment</p>
+								<p class="lh-lg">19 hrs ago</p>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<p class="fs-6 fw-bold">Did I do it right?</p>
+								<p class="text-secondary lh-lg">Christina Lin</p>
+							</div>
+						</a>
+					</div>
+					<div class="card rounded-mini">
+						<div
+							class="card-header d-flex justify-content-between align-items-center border-light-neutral bg-light"
+						>
+							<h2 class="text-dark fs-6">
+								<small class="fs-mini mb-1"
+									>Chapter Assignment 2 / HTML&CSS</small
+								>
+								<p>Please check this file for me, thanks!</p>
+							</h2>
+							<span class="material-icons text-dark"> more_vert </span>
+						</div>
+						<div class="card-body ps-4 pe-7 py-4">
+							<div class="card-content d-flex mb-4">
+								<img
+									src="../assets/images/emilywang.jpeg"
+									alt="student-photo"
+									class="rounded-circle me-3"
+								/>
+								<div class="card-text border-bottom">
+									<div class="mb-4">
+										<h3 class="fs-6">Emily Wang</h3>
+										<time class="fs-mini text-secondary"
+											>10:38 AM (4 hours ago)</time
+										>
+									</div>
+									<p class="fs-sm mb-4">
+										Hi Teacher, the attached file is my homework of chapter 2.
+										And here comes a question: Why in the following code the
+										height of the
+										<span class="roboto-mono text-success">div</span>&nbsp; is
+										bigger than the height of the
+										<span class="roboto-mono text-success">img</span>&nbsp; ?
+										There is a gap below the image, but it doesn’t seems to be a
+										padding/margin. <br />What is the gap or extra space below
+										image?
+									</p>
+									<a
+										href="#"
+										class="btn btn-light border-light-neutral fw-bold rounded-mini mb-4"
+										><span class="material-icons me-3 align-bottom"
+											>attach_file</span
+										>HW-2-David.zip</a
+									>
+								</div>
+							</div>
+							<div class="card-content d-flex">
+								<img
+									src="../assets/images/andychen.jpeg"
+									alt="teacher-photo"
+									class="rounded-circle me-3"
+								/>
+								<div class="card-text">
+									<div class="mb-4">
+										<div class="d-flex justify-content-between">
+											<div>
+												<h3 class="fs-6">Andy Chen (You)</h3>
+												<time class="fs-mini text-secondary"
+													>13:24 AM (1 hours ago)</time
+												>
+											</div>
+											<div>
+												<span class="material-icons text-end me-6">
+													star_outline
+												</span>
+												<span class="material-icons text-end"> edit </span>
+											</div>
+										</div>
+									</div>
 
+									<p class="fs-sm">
+										Hi David, by default, an image is rendered inline, like a
+										letter so it sits on the same line that a, b, c and d sit
+										on. There is space below that line for the descenders you
+										find on letters like g, j, p and q.
+										<br /><br />
+										You can: 　
+										<br /><br />
+									</p>
+									<ul class="list-unstyled">
+										<li>
+											• adjust the
+											<span class="roboto-mono text-success ms-1 me-2 bg-light"
+												>vertical-align</span
+											>
+											of the image to position it elsewhere <br />(e.g. the
+											<span class="roboto-mono text-success bg-light"
+												>middle</span
+											>
+											) or
+										</li>
+										<li>
+											• change the
+											<span class="roboto-mono text-success bg-light me-2"
+												>display</span
+											>
+											so it isn’t inline.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-end align-items-center w-100">
+					<div class="mx-auto">
+						<a href="#"><span class="material-icons"> navigate_before </span></a>
+						<a href="#"><span class="material-icons"> navigate_next </span></a>
+					</div>
+					<a href="#" class="btn btn-outline-success rounded-mini me-4"
+						>Mark as read</a
+					>
+					<a href="#" class="replyBtn btn btn-success rounded-mini">Reply</a>
+				</div>
+			</main>
+		</div>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="../main.js"></script>
-  </body>
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

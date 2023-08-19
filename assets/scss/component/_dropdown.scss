@@ -1,0 +1,17 @@
+.dropdown-toggle{
+
+    &:after{
+        content:"expand_more";
+        border: 0;
+        //style
+        margin-left: 9px;
+        font-family: 'Material Icons';
+        color:$success;
+        line-height: 1;
+        font-size: 24px;
+        font-weight: 400;
+    } 
+    &[aria-expanded="true"]:after{
+            rotate: 180deg;
+        }
+    }

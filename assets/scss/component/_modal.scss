@@ -4,13 +4,8 @@
 .modal-lh-33{
     line-height: 33px;
 }
-.modal-footer button{
+.modal-footer > *{
     margin-inline-end: 0;
-    padding : 8px 33px;
-    
-    & + button {
-        margin-left: 15px;
-    }
 }
 
 

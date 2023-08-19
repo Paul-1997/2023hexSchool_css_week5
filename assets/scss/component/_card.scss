@@ -1,0 +1,21 @@
+.card{
+    width: clamp(584px,60%,1100px);
+}
+.card-header{
+    padding-block:12px;
+}
+.card-content{
+    img{
+        height: 40px;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+.card-text{ //FIXME:
+    h3{
+        line-height: 1;
+    }
+    ul li{
+        text-indent: 16px;
+    }
+}
